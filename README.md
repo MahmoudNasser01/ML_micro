@@ -3,6 +3,19 @@
 
 then but it in the root of the project
 
+# run it using docker
+1. 
+```shell
+docker build -t my-fastapi-app .   
+```
+
+2. 
+
+```shell
+docker run -p 8000:8000 my-fastapi-app  
+```
+
+now your app will run on http://0.0.0.0:8000/
 
 # create venv
 
