@@ -1,9 +1,9 @@
 import asyncio
 
+from asgiref.sync import sync_to_async
 from fastapi import FastAPI, Request
 
 from recognizer import FaceRecognizer
-from asgiref.sync import async_to_sync, sync_to_async
 
 app = FastAPI()
 
@@ -63,3 +63,8 @@ async def train_(request: Request):
     data = await request.json()
     asyncio.create_task(train(data))  # Create a background task for training
     return {"status": "done"}
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
