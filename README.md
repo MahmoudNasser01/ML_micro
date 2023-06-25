@@ -1,3 +1,7 @@
+# install prdicator file from here
+[URL](https://github.com/GuoQuanhao/68_points/blob/master/shape_predictor_68_face_landmarks.dat)
+
+then but it in the root of the project
 
 
 # create venv
